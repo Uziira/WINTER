@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Secret Gift</title>
+    <!-- Chargement des polices Google Fonts: Poppins et Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="snow-container" id="snowContainer"></div>
+
+    <button id="backBtn" class="btn-back-top-left hidden" aria-label="Back to start">↩</button>
+
+    <div class="card" id="giftCard">
+        <div class="gift-icon">🎁</div>
+        <h2>Happy Winter</h2>
+        <p>You have a winter gift waiting for you. Would you like to accept it?</p>
+        <div class="button-group">
+            <button id="declineBtn" class="btn btn-secondary">Decline</button>
+            <button id="acceptBtn" class="btn btn-primary">Accept</button>
+        </div>
+    </div>
+
+    <div class="card hidden" id="resultCard">
+        <div class="character-wrapper">
+            <video src="nailong.mp4" class="character-video" loop muted playsinline disablepictureinpicture></video>
+        </div>
+        <h2>Surprise!</h2>
+        <p>Here is your special gift my Piggyggy !</p>
+    </div>
+
+    <div class="card hidden" id="refuseCard">
+        <div class="character-wrapper">
+            <img src="nailong.jpg" alt="Refusal response" class="refuse-image">
+        </div>
+        <h2>How dare you refuse my gift! 😤</h2>
+        <p>You broke my heart...</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
